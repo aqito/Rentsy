@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rentsy</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../static/images/favicon.png" />
+    <link rel="stylesheet" href="../static/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="logo"><img src="../static/images/logo.png" alt="Logo" /></div>
+    <div id="container">
+      <div class="map_container">
+        <div class="border_div">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="border_div">
+          <h2 class="heading">Search Address</h2>
+          <div class="input_field">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >Crime Rate
+              <input id="crime_rate" type="checkbox" disabled />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >Employment Rate
+              <input id="employment_rate" type="checkbox" disabled />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >Cost Of Living
+              <input id="cost_of_living" type="checkbox" disabled />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >PTALS
+              <input id="ptals" type="checkbox" disabled />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >TIM
+              <input id="tim" type="checkbox" disabled />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >Avg Rent
+              <input id="avg_rent" type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="input_field input_field_checkbox">
+            <label class="custom_checkbox"
+              >Avg House Price
+              <input id="avg_house_price" type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/javascripts/script.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDKhLaPCOjWuV1VZyDqvHfCPJcmENJJK0&libraries=visualization&callback=initMap"
+    ></script>
+  </body>
+</html>
